@@ -25,13 +25,21 @@ git status = es para saber si git esta viendo el estado del repositorio
 git add 'nombre del archivo' = agrega el archivo
 git add . = agrega todos los archivos de esa carpeta
 git rm --cached <file> = para q deje de monitorear el archivo
-git config --global user.mail "pinto_enam@hotmail.com"
+     git config user.name "Billy Everyteen"
 git config --global user.name "rodrigo"
 git config --local user.name "Tu nombre aquí"
 git config --local user.email "Tu@email.aqui”
 git commit -m 'commit' = nos permite guadar el commit con su comentario
+git config --global user.email "pinto_enam@hotmail.com"  
+git log -p
 Solo para aclarar un poco, ya que entenderemos mejor cómo funciona Git durante el curso, aquí hay algunas definiciones interesantes:
 
 HEAD: Estado actual de nuestro código, es decir, donde nos colocó Git
 Working tree: Lugar donde los archivos realmente están siendo almacenados
 index: Lugar donde Git almacena lo que será commiteado, es decir, la ubicación entre el working tree y el repositorio de Git en sí.     
+*git ignore= para ignorar carpetas que no quiero q monitoree, en este caso creo esa archivo y ahi adentro listo lo que quiero evitar que monitoree
+*mkdir nombre= crea un directorio si agragamps este comando y el nocdmbre de la carpeta
+* git init --bare = solo guardas las modificaciones de los archivos
+* git push servidorLocal master = desde el serrvidorLocal hacia la master
+*git remote rename origin servidorLocal = cambiamos el nombre de origin a servidorLocal
+* git pull servidorLocal master = nos trae todos los cambios que se realizo en el servidorLocal
